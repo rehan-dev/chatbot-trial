@@ -1,0 +1,9 @@
+services:
+  chatbot:
+    build: .
+    container_name: chatbot
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./app:/app/app
+      - ./chat.db:/app/chat.db
